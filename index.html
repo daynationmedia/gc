@@ -93,15 +93,20 @@
     <!-- HERO SECTION -->
     <section class="relative min-h-screen pt-24 sm:pt-20 flex items-center justify-center overflow-hidden">
         
-        <!-- Background Image Container -->
+        <!-- Background Image Container (SUDAH DIPERTERANG DI SINI) -->
         <div class="absolute inset-0 z-0">
+            <!-- 
+              PETUNJUK KECERAHAN GAMBAR:
+              - Opacity diubah ke 'opacity-75' agar jauh lebih terang dari versi sebelumnya (45%).
+              - Jika ingin lebih terang lagi tanpa bayangan, kamu bisa menggunakan 'opacity-90' atau 'opacity-100'.
+            -->
             <img src="/home/spot/Downloads/gc.jpg" 
                  alt="Baseball Stadium Night" 
-                 class="w-full h-full object-cover object-center opacity-45 scale-105"
+                 class="w-full h-full object-cover object-center opacity-75 scale-105 transition-opacity duration-500"
                  onerror="this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1920&auto=format&fit=crop'">
                  
-            <!-- Vignette shadow around the screen -->
-            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/60 to-darkBg/80"></div>
+            <!-- Vignette shadow (Diperhalus menjadi via-darkBg/30 dan to-darkBg/60 agar gambar tidak terlalu tertutup hitam tebal) -->
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/30 to-darkBg/60"></div>
             <!-- Glow effect in the background -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] h-[500px] bg-neonGreen/10 rounded-full blur-[120px]"></div>
         </div>
@@ -426,18 +431,5 @@
             }, 4000);
         }
     </script>
-    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5024092,4,16,150,30,00000001']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5024092&101" alt="counter create hit" border="0"></a></noscript>
-<!-- Histats.com  END  -->
 </body>
 </html>
